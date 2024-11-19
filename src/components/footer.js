@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
 
 export const Footerprincipal = () => {
   return(
-<div></div>
+    <footer className="bg-danger text-white text-center py-3">
+    <p>&copy; 2024 Recetas</p>
+  </footer>
    
 )
 }

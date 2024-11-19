@@ -1,6 +1,5 @@
 
 import './App.css';
-import './components/ContactForm.css';
 import { Menuprincipal } from './components/menu';
 import { Footerprincipal } from './components/footer';
 

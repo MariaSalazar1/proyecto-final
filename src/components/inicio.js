@@ -5,7 +5,6 @@ import React, { useState } from "react";
 
 
 
-
 function Inicio(props) {
   const [modalVisible, setModalVisible] = useState(false);
   const [selectedRecipe, setSelectedRecipe] = useState(null);
@@ -106,6 +105,7 @@ function Inicio(props) {
 
         {/* Top Recipes */}
         <section className="bg-white py-4">
+
       <div className="container">
         <h2 className="text-center mb-4">Top 10 Recetas</h2>
         <div className="row">
@@ -187,6 +187,43 @@ function Inicio(props) {
         </div>
       )}
     </section>
+
+  <div className="container">
+    <h2 className="text-center mb-4">Top 10 Recetas</h2>
+    <div className="row">
+      {[...Array(10)].map((_, index) => (
+        <div className="col-6 col-md-3 mb-4" key={index}>
+          <div className="card h-100">
+            <video
+              className="card-img-top rounded"
+              style={{ height: "150px", objectFit: "cover" }}
+              controls
+              muted
+              loop
+            >
+              <source
+                src={`/videos/recipe${index + 1}.mp4`}
+                type="video/mp4"
+              />
+              Tu navegador no soporta videos.
+            </video>
+            <div className="card-body">
+              <p className="card-text">
+                {descriptions[index] || "Sin descripción disponible."}
+              </p>
+            </div>
+            <div className="card-footer text-center">
+              <button className="btn btn-info btn-sm">
+                Ver receta completa
+              </button>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
 
 
       </main>

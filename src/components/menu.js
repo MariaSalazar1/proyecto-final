@@ -5,9 +5,9 @@ import React from "react";
 export const Menuprincipal = () => {
     return(
 
-      <header style={{ backgroundColor: '#ffdf4d' }} className="text-white py-3">
+      <header style={{ backgroundColor: '#000080' }} className="text-white py-3">
         <div className="container d-flex justify-content-between align-items-center">
-          <h1 className="h4">RECETAS</h1>
+          <h1 className="h4">Rincón del cocinero</h1>
           <input
             type="text"
             className="form-control w-50"

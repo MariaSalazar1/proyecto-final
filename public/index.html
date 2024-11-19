@@ -41,7 +41,24 @@
     
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    
+    <script>// Import the functions you need from the SDKs you need
+      import { initializeApp } from "firebase/app";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+      
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyCaQ5qF3eLuHoLRMVASc0eisy2Zt8LbPM8",
+        authDomain: "recetas-b5895.firebaseapp.com",
+        databaseURL: "https://recetas-b5895-default-rtdb.firebaseio.com",
+        projectId: "recetas-b5895",
+        storageBucket: "recetas-b5895.firebasestorage.app",
+        messagingSenderId: "555970640246",
+        appId: "1:555970640246:web:5f7d20d6ec1454d9b4e257"
+      };
+      
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);</script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -54,7 +71,7 @@
     -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
-           AOS.init();
+           AOS.init();           
         </script>
     
   

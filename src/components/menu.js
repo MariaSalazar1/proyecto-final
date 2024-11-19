@@ -7,7 +7,7 @@ export const Menuprincipal = () => {
 
       <header style={{ backgroundColor: '#ffdf4d' }} className="text-white py-3">
         <div className="container d-flex justify-content-between align-items-center">
-          <h1 className="h4">PANCHOTE</h1>
+          <h1 className="h4">RECETAS</h1>
           <input
             type="text"
             className="form-control w-50"
